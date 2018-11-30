@@ -36,7 +36,7 @@
 # Copyright 2018 Your name here, unless otherwise noted.
 #
 class dockerup {
-  #require dockerup::install
+  require dockerup::installdocker
   include dockerup::addbuild
-
+  include dockerup::run
 }
